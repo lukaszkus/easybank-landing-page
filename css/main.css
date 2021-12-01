@@ -43,4 +43,8 @@ textarea,
 select {
   font: inherit;
 }
+
+.container {
+  width: 1110px;
+}
 /*# sourceMappingURL=main.css.map */
