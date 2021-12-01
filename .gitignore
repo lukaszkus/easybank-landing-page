@@ -1,0 +1,9 @@
+.DS_Store
+.prettierignore
+
+.idea
+/node_modules/
+/design/
+package-lock.json
+README-template.md
+style-guide.md
