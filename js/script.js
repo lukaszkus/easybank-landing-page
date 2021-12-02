@@ -6,9 +6,12 @@ function toggleMenu() {
   if (menu.classList.contains("is-active")) {
     this.setAttribute("aria-expanded", "false");
     menu.classList.remove("is-active");
+    mobileBtn.setAttribute("aria-expanded", false);
+    
   } else {
     menu.classList.add("is-active");
     this.setAttribute("aria-expanded", "true");
+    mobileBtn.setAttribute("aria-expanded", true);
   }
 }
 

@@ -80,10 +80,36 @@ select {
     height: 5rem;
   }
 }
+.header__ham-btn {
+  background: transparent;
+  background-image: url("../../images/icon-hamburger.svg");
+  background-repeat: no-repeat;
+  width: 1.5rem;
+  aspect-ratio: 2/1;
+  border: 0;
+  cursor: pointer;
+}
+.header__ham-btn span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  /* added line */
+  border: 0;
+}
 @media (min-width: 600px) {
   .header__ham-btn {
     display: none;
   }
+}
+.header__ham-btn[aria-expanded=true] {
+  background-image: url("../../images/icon-close.svg");
+  width: 1.125rem;
+  aspect-ratio: 1;
 }
 .header__nav {
   display: flex;

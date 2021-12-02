@@ -16,9 +16,25 @@
   }
 
   &__ham-btn {
+    background: transparent;
+    background-image: url("../../images/icon-hamburger.svg");
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    aspect-ratio: 2 / 1;
+    border: 0;
+    cursor: pointer;
+    span {
+      @include hide-on-screen;
+    }
     @include tablet {
       display: none;
     }
+  }
+
+  &__ham-btn[aria-expanded="true"] {
+    background-image: url("../../images/icon-close.svg");
+    width: 1.125rem;
+    aspect-ratio: 1;
   }
 
   &__nav {
