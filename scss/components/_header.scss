@@ -24,7 +24,7 @@
   }
 
   &__nav-list {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
@@ -37,6 +37,7 @@
     background-color: $clr-white;
     border-radius: 0.5rem;
     @include tablet {
+      display: flex;
       flex-direction: row;
       position: relative;
       gap: 1rem;
@@ -58,4 +59,8 @@
       display: block;
     }
   }
+}
+
+.is-active {
+  display: flex;
 }

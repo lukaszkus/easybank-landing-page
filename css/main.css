@@ -75,7 +75,7 @@ select {
   align-items: center;
 }
 .header__nav-list {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
@@ -90,6 +90,7 @@ select {
 }
 @media (min-width: 575px) {
   .header__nav-list {
+    display: flex;
     flex-direction: row;
     position: relative;
     gap: 1rem;
@@ -110,6 +111,10 @@ select {
   .header__btn {
     display: block;
   }
+}
+
+.is-active {
+  display: flex;
 }
 
 body {
