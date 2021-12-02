@@ -1,8 +1,16 @@
-@import "./reset";
-@import "./fonts";
-@import "./variables";
-@import "./mixins";
+//Settings
+@import "./settings/reset";
+@import "./settings/fonts";
+@import "./settings/variables";
+@import "./settings/mixins";
+@import "./settings/utils";
 
-.container {
-  width: 1110px;
+//Components
+@import "./components/header";
+
+//Main styles
+
+body {
+  font-family: $ff-sans;
+  background-color: $clr-grayish-light;
 }
