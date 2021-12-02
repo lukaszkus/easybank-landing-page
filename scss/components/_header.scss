@@ -4,7 +4,6 @@
   background-color: $clr-white;
   position: sticky;
   top: 0;
-  z-index: 1000;
 
   &__top-bar {
     display: flex;
@@ -39,21 +38,35 @@
     width: calc(100% - 3rem);
     background-color: $clr-white;
     border-radius: 0.5rem;
+    box-shadow: 0 5rem 6rem 1.5rem $clr-dark-25;
     @include tablet {
       display: flex;
       flex-direction: row;
       position: relative;
-      gap: 1rem;
+      gap: 1.75rem;
       top: 0;
       left: 0;
       padding: 0;
       background-color: transparent;
       width: 100%;
+      box-shadow: none;
     }
   }
 
   &__nav-link {
     text-decoration: none;
+    color: $clr-grayish;
+    font-size: 0.875rem;
+    &:hover {
+      color: $clr-dark;
+      @include tablet {
+        padding-bottom: 1.25rem;
+        border-bottom: 0.2rem solid $clr-accent;
+      }
+      @include desktop {
+        padding-bottom: 1.75rem;
+      }
+    }
   }
 
   &__btn {
