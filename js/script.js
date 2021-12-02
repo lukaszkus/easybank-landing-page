@@ -1,7 +1,8 @@
 const mobileBtn = document.querySelector(".header__ham-btn");
 const menu = document.querySelector(".header__nav-list");
+const menuItems = document.querySelectorAll(".header__nav-link");
 
-mobileBtn.addEventListener("click", function () {
+function toggleMenu() {
   if (menu.classList.contains("is-active")) {
     this.setAttribute("aria-expanded", "false");
     menu.classList.remove("is-active");
@@ -9,4 +10,8 @@ mobileBtn.addEventListener("click", function () {
     menu.classList.add("is-active");
     this.setAttribute("aria-expanded", "true");
   }
-});
+}
+
+mobileBtn.addEventListener("click", toggleMenu);
+
+menuItems.forEach((item) => item.addEventListener("click", toggleMenu));
