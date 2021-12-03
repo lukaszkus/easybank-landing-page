@@ -1,0 +1,17 @@
+//Intro
+
+.intro {
+  background-image: url("../../images/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  background-color: $clr-very-light;
+  @include tablet {
+    background-image: url("../../images/bg-intro-desktop.svg");
+    background-size: auto;
+  }
+
+  &__img {
+    transform: translateY(-20%);
+  }
+}

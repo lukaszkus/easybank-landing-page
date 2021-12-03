@@ -60,7 +60,7 @@ select {
   text-decoration: none;
 }
 .btn:hover {
-  background-image: linear-gradient(135deg, rgba(49, 211, 92, 0.5), rgba(43, 183, 218, 0.5));
+  background-image: linear-gradient(135deg, rgba(49, 211, 92, 0.65), rgba(43, 183, 218, 0.65));
 }
 
 .header {
@@ -68,6 +68,7 @@ select {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 .header__top-bar {
   display: flex;
@@ -177,8 +178,25 @@ select {
   display: flex;
 }
 
+.intro {
+  background-image: url("../../images/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  background-color: #fafafa;
+}
+@media (min-width: 600px) {
+  .intro {
+    background-image: url("../../images/bg-intro-desktop.svg");
+    background-size: auto;
+  }
+}
+.intro__img {
+  transform: translateY(-20%);
+}
+
 body {
   font-family: "Public Sans", sans-serif;
-  background-color: #f3f4f6;
+  font-weight: 400;
 }
 /*# sourceMappingURL=main.css.map */

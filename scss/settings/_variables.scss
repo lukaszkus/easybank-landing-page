@@ -4,9 +4,9 @@
 $clr-dark: hsl(233, 26%, 24%);
 $clr-dark-25: hsla(233, 26%, 24%, 25%);
 $clr-accent: hsl(136, 65%, 51%);
-$clr-accent-50: hsla(136, 65%, 51%, 50%);
+$clr-accent-65: hsla(136, 65%, 51%, 65%);
 $clr-bright: hsl(192, 70%, 51%);
-$clr-bright-50: hsla(192, 70%, 51%, 50%);
+$clr-bright-65: hsla(192, 70%, 51%, 65%);
 
 //Neutral colors
 $clr-grayish: hsl(233, 8%, 62%);
@@ -16,7 +16,7 @@ $clr-white: hsl(0, 0%, 100%);
 
 //Gradients
 $gradient: linear-gradient(135deg, $clr-accent, $clr-bright);
-$gradient-light: linear-gradient(135deg, $clr-accent-50, $clr-bright-50);
+$gradient-light: linear-gradient(135deg, $clr-accent-65, $clr-bright-65);
 
 //Fonts
 $ff-sans: "Public Sans", sans-serif;

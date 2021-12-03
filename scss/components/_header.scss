@@ -4,6 +4,7 @@
   background-color: $clr-white;
   position: sticky;
   top: 0;
+  z-index: 1000;
 
   &__top-bar {
     display: flex;

@@ -7,10 +7,11 @@
 
 //Components
 @import "./components/header";
+@import "./components/intro";
 
 //Main styles
 
 body {
   font-family: $ff-sans;
-  background-color: $clr-grayish-light;
+  font-weight: 400;
 }
