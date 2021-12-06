@@ -17,3 +17,7 @@
     background-image: $gradient-light;
   }
 }
+
+.article {
+  @include flex-center;
+}
