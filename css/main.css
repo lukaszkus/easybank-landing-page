@@ -52,7 +52,8 @@ select {
 
 .btn {
   background-image: linear-gradient(135deg, #31d35c, #2bb7da);
-  padding: 1rem 2.125rem;
+  display: inline-block;
+  padding: 0.875rem 2.125rem;
   border-radius: 2.125rem;
   color: white;
   font-size: 0.875rem;
@@ -69,6 +70,7 @@ select {
   position: sticky;
   top: 0;
   z-index: 1000;
+  width: 100%;
 }
 .header__top-bar {
   display: flex;
@@ -189,10 +191,64 @@ select {
   .intro {
     background-image: url("../../images/bg-intro-desktop.svg");
     background-size: auto;
+    background-position: right -25rem bottom -4.875rem;
   }
 }
+.intro__content {
+  position: relative;
+}
 .intro__img {
-  transform: translateY(-20%);
+  transform: translateY(-10%);
+}
+@media (min-width: 600px) {
+  .intro__img {
+    position: absolute;
+    top: -80px;
+    right: -270px;
+  }
+}
+.intro__heading {
+  text-align: center;
+  transform: translateY(-5%);
+}
+@media (min-width: 600px) {
+  .intro__heading {
+    max-width: 28rem;
+    text-align: left;
+    transform: translateY(0);
+  }
+}
+.intro__title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #2d314d;
+  padding-bottom: 1.5625rem;
+}
+@media (min-width: 600px) {
+  .intro__title {
+    font-size: 3.125rem;
+    padding: 11.25rem 0 1.875rem 0;
+  }
+}
+.intro__description {
+  color: #9698a6;
+  line-height: 1.5;
+  font-size: 0.9375rem;
+  padding-bottom: 2.25rem;
+}
+@media (min-width: 600px) {
+  .intro__description {
+    font-size: 1.125rem;
+    padding-bottom: 2.5rem;
+  }
+}
+.intro__btn {
+  margin-bottom: 4rem;
+}
+@media (min-width: 600px) {
+  .intro__btn {
+    margin-bottom: 10.625rem;
+  }
 }
 
 body {

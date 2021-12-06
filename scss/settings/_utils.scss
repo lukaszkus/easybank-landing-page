@@ -6,7 +6,8 @@
 
 .btn {
   background-image: $gradient;
-  padding: 1rem 2.125rem;
+  display: inline-block;
+  padding: 0.875rem 2.125rem;
   border-radius: 2.125rem;
   color: $clr-white;
   font-size: 0.875rem;
