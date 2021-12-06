@@ -251,6 +251,10 @@ select {
   }
 }
 
+.about {
+  background-color: #f3f4f6;
+}
+
 body {
   font-family: "Public Sans", sans-serif;
   font-weight: 400;
