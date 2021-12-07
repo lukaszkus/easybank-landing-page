@@ -391,6 +391,9 @@ select {
 .footer {
   background-color: #2d314d;
 }
+.footer__social {
+  display: flex;
+}
 
 body {
   font-family: "Public Sans", sans-serif;

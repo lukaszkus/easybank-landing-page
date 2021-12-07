@@ -2,4 +2,8 @@
 
 .footer {
   background-color: $clr-dark;
+
+  &__social {
+    display: flex;
+  }
 }
