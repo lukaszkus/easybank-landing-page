@@ -1,35 +1,52 @@
 //Intro
 
 .intro {
+  max-width: 100%;
   background-image: url("../../images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top center;
   background-color: $clr-very-light;
+
   @include tablet {
     background-image: url("../../images/bg-intro-desktop.svg");
     background-size: auto;
-    background-position: right -25rem bottom -4.875rem;
+    background-position: 45vw -24vh;
   }
 
   &__content {
     position: relative;
+    // @include tablet {
+    //   display: flex;
+    //   flex-direction: row-reverse;
+    //   justify-content: space-between;
+    // }
   }
 
   &__img {
     transform: translateY(-10%);
     @include tablet {
-      position: absolute;
-      top: -80px;
-      right: -270px;
+      // width: 50%;
+      img {
+        position: absolute;
+        transform: translate(44.5vw, -12vh);
+      }
     }
   }
+
+  // &__img {
+  //   overflow: hidden;
+  //   transform: translateY(-10%);
+  //   @include tablet {
+  //     transform: translate(0px, 25px);
+  //   }
+  // }
 
   &__heading {
     text-align: center;
     transform: translateY(-5%);
     @include tablet {
-      max-width: 28rem;
+      max-width: 40%;
       text-align: left;
       transform: translateY(0);
     }

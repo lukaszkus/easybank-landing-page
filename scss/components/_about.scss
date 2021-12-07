@@ -4,6 +4,9 @@
   background-color: $clr-grayish-light;
   padding: 4.375rem 0;
   text-align: center;
+  z-index: -1000;
+  position: relative;
+
   @include tablet {
     text-align: left;
     padding: 6.875rem 0;
