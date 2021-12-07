@@ -45,5 +45,26 @@
 
   &__item-content {
     padding: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__item-author {
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: $clr-grayish;
+  }
+
+  &__item-title {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $clr-dark;
+  }
+
+  &__item-desc {
+    font-size: 0.875rem;
+    color: $clr-grayish;
+    line-height: 1.5;
   }
 }

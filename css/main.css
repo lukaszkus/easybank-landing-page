@@ -368,6 +368,24 @@ select {
 }
 .articles__item-content {
   padding: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.articles__item-author {
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: #9698a6;
+}
+.articles__item-title {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #2d314d;
+}
+.articles__item-desc {
+  font-size: 0.875rem;
+  color: #9698a6;
+  line-height: 1.5;
 }
 
 body {
