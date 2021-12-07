@@ -388,6 +388,10 @@ select {
   line-height: 1.5;
 }
 
+.footer {
+  background-color: #2d314d;
+}
+
 body {
   font-family: "Public Sans", sans-serif;
   font-weight: 400;
