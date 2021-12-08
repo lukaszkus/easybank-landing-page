@@ -59,7 +59,13 @@
   &__item-title {
     font-size: 1rem;
     font-weight: 400;
-    color: $clr-dark;
+    a {
+      color: $clr-dark;
+      text-decoration: none;
+    }
+    a:hover {
+      color: $clr-accent;
+    }
   }
 
   &__item-desc {

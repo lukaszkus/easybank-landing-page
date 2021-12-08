@@ -380,7 +380,13 @@ select {
 .articles__item-title {
   font-size: 1rem;
   font-weight: 400;
+}
+.articles__item-title a {
   color: #2d314d;
+  text-decoration: none;
+}
+.articles__item-title a:hover {
+  color: #31d35c;
 }
 .articles__item-desc {
   font-size: 0.875rem;
