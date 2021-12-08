@@ -4,7 +4,7 @@
   background-color: $clr-dark;
 
   @include tablet {
-    padding: 3rem;
+    padding: 3rem 0;
   }
 
   &__content {

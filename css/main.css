@@ -394,7 +394,7 @@ select {
 }
 @media (min-width: 640px) {
   .footer {
-    padding: 3rem;
+    padding: 3rem 0;
   }
 }
 @media (min-width: 640px) {
