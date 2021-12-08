@@ -81,18 +81,21 @@
     align-items: center;
     padding: 1.875rem 0;
     @include tablet {
-      width: 38%;
-      align-items: flex-end;
       padding: 0;
       text-align: right;
+      align-items: flex-end;
+    }
+    @include desktop {
+      width: 38%;
     }
   }
 
   &__btn {
-    margin-bottom: 1.875rem;
+    margin-bottom: 2rem;
   }
 
   &__copyrights {
+    font-size: 0.75rem;
     color: $clr-grayish;
   }
 }
