@@ -73,7 +73,7 @@
     font-size: 0.9375rem;
     padding-bottom: 2.25rem;
     @include tablet {
-      font-size: 1rem;
+      font-size: 0.9375rem;
       padding-bottom: 2rem;
     }
     @include desktop {
@@ -81,11 +81,4 @@
       padding-bottom: 2.5rem;
     }
   }
-
-  // &__btn {
-  //   // margin-bottom: 2rem;
-  //   @include tablet {
-  //     // margin-bottom: 10.625rem;
-  //   }
-  // }
 }
