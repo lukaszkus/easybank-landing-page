@@ -199,13 +199,20 @@ select {
 .intro__content {
   position: relative;
 }
+@media (min-width: 640px) {
+  .intro__content::before {
+    content: url(../../images/image-mockups.png);
+    position: absolute;
+    top: -5vh;
+    right: -15vw;
+  }
+}
 .intro__img {
   transform: translateY(-10%);
 }
 @media (min-width: 640px) {
-  .intro__img img {
-    position: absolute;
-    transform: translate(44.5vw, -12vh);
+  .intro__img {
+    display: none;
   }
 }
 .intro__heading {

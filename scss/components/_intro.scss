@@ -14,23 +14,43 @@
     background-position: 45vw -24vh;
   }
 
+  // &__content {
+  //   // position: relative;
+  //   // @include tablet {
+  //   //   display: flex;
+  //   //   flex-direction: row-reverse;
+  //   //   justify-content: space-between;
+  //   // }
+  // }
+
   &__content {
     position: relative;
-    // @include tablet {
-    //   display: flex;
-    //   flex-direction: row-reverse;
-    //   justify-content: space-between;
-    // }
+    @include tablet {
+      &::before {
+        content: url(../../images/image-mockups.png);
+        position: absolute;
+        top: -5vh;
+        right: -15vw;
+        // z-index: 1;
+      }
+    }
   }
 
   &__img {
     transform: translateY(-10%);
     @include tablet {
       // width: 50%;
-      img {
-        position: absolute;
-        transform: translate(44.5vw, -12vh);
-      }
+      // img {
+      //   position: absolute;
+      //   transform: translate(44.5vw, -12vh);
+      // }
+      display: none;
+      // &::before {
+      //   content: url(../../images/image-mockups.png);
+      //   position: absolute;
+      //   top: 0;
+      //   right: 0;
+      // }
     }
   }
 
