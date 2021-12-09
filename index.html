@@ -18,7 +18,7 @@
     <!-- Header -->
     <header class="header">
       <section class="header__top-bar container">
-        <a href="#Home"
+        <a href="#Home" aria-label="Logo - home page link"
           ><img src="./images/logo.svg" alt="Website logo" class="header__logo"
         /></a>
         <nav class="header__nav">
@@ -44,7 +44,7 @@
           </ul>
         </nav>
         <a
-          href="/"
+          href="#"
           class="header__btn btn"
           role="button"
           aria-label="Request Invite"
@@ -56,7 +56,7 @@
     <!-- Main -->
     <main class="main">
       <!-- Intro -->
-      <section class="intro">
+      <section class="intro" role="doc-introduction">
         <div class="intro__content container">
           <div class="intro__img">
             <img src="./images/image-mockups.png" alt="" />
@@ -68,7 +68,13 @@
               one-stop-shop for spending, saving, budgeting, investing, and much
               more.
             </p>
-            <a href="/" class="intro__btn btn">Request Invite</a>
+            <a
+              href="#"
+              class="intro__btn btn"
+              role="button"
+              aria-label="Request Invite"
+              >Request Invite</a
+            >
           </div>
         </div>
       </section>
@@ -152,11 +158,11 @@
               </div>
               <div class="articles__item-content">
                 <span class="articles__item-author">By Claire Robinson</span>
-                <div class="articles__item-title">
+                <h4 class="articles__item-title">
                   <a href="#Home">
                     Receive money in any currency with no fees
                   </a>
-                </div>
+                </h4>
                 <p class="articles__item-desc">
                   The world is getting smaller and we’re becoming more mobile.
                   So why should you be forced to only receive money in a single
@@ -171,11 +177,11 @@
               </div>
               <div class="articles__item-content">
                 <span class="articles__item-author">By Wilson Hutton</span>
-                <div class="articles__item-title">
+                <h4 class="articles__item-title">
                   <a href="#Home">
                     Treat yourself without worrying about money
                   </a>
-                </div>
+                </h4>
                 <p class="articles__item-desc">
                   Our simple budgeting feature allows you to separate out your
                   spending and set realistic limits each month. That means you …
@@ -189,11 +195,11 @@
               </div>
               <div class="articles__item-content">
                 <span class="articles__item-author">By Wilson Hutton</span>
-                <div class="articles__item-title">
+                <h4 class="articles__item-title">
                   <a href="#Home">
                     Take your Easybank card wherever you go
                   </a>
-                </div>
+                </h4>
                 <p class="articles__item-desc">
                   We want you to enjoy your travels. This is why we don’t charge
                   any fees on purchases while you’re abroad. We’ll even show you
@@ -208,11 +214,11 @@
               </div>
               <div class="articles__item-content">
                 <span class="articles__item-author">By Claire Robinson</span>
-                <div class="articles__item-title">
+                <h4 class="articles__item-title">
                   <a href="#Home">
                     Our invite-only Beta accounts are now live!
                   </a>
-                </div>
+                </h4>
                 <p class="articles__item-desc">
                   After a lot of hard work by the whole team, we’re excited to
                   launch our closed beta. It’s easy to request an invite through
@@ -230,7 +236,7 @@
       <div class="footer__content container">
         <div class="footer__heading">
           <div class="footer__logo">
-            <a href="/">
+            <a href="#Home" aria-label="home page link">
               <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20">
                 <defs>
                   <linearGradient
@@ -267,7 +273,7 @@
             </a>
           </div>
           <div class="footer__social">
-            <a href=#Facebook/">
+            <a href="#" aria-label="social media link">
               <svg
                 class="footer__social-ico"
                 xmlns="http://www.w3.org/2000/svg"
@@ -280,7 +286,7 @@
                 />
               </svg>
             </a>
-            <a href="#Youtube">
+            <a href="#" aria-label="social media link">
               <svg
                 class="footer__social-ico"
                 xmlns="http://www.w3.org/2000/svg"
@@ -293,7 +299,7 @@
                 />
               </svg>
             </a>
-            <a href="#Twitter">
+            <a href="#" aria-label="social media link">
               <svg
                 class="footer__social-ico"
                 xmlns="http://www.w3.org/2000/svg"
@@ -306,7 +312,7 @@
                 />
               </svg>
             </a>
-            <a href="#Pinterest">
+            <a href="#" aria-label="social media link">
               <svg
                 class="footer__social-ico"
                 xmlns="http://www.w3.org/2000/svg"
@@ -319,7 +325,7 @@
                 />
               </svg>
             </a>
-            <a href="#Instagram">
+            <a href="#" aria-label="social media link">
               <svg
                 class="footer__social-ico"
                 xmlns="http://www.w3.org/2000/svg"
@@ -337,7 +343,7 @@
 
         <ul class="footer__nav-list">
           <li class="footer__nav-item">
-            <a href="#About Us" class="footer__nav-link">About Us</a>
+            <a href="#About-us" class="footer__nav-link">About Us</a>
           </li>
           <li class="footer__nav-item">
             <a href="#Contact" class="footer__nav-link">Contact</a>
@@ -355,12 +361,20 @@
             <a href="#Support" class="footer__nav-link">Support</a>
           </li>
           <li class="footer__nav-item">
-            <a href="#Privacy-policy" class="footer__nav-link">Privacy Policy</a>
+            <a href="#Privacy-policy" class="footer__nav-link"
+              >Privacy Policy</a
+            >
           </li>
         </ul>
 
         <div class="footer__credits">
-          <a href="#Home" class="footer__btn btn">Request Invite</a>
+          <a
+            href="#Home"
+            class="footer__btn btn"
+            role="button"
+            aria-label="Request Invite"
+            >Request Invite</a
+          >
           <div class="footer__copyrights">
             © Easybank. All Rights Reserved
           </div>
@@ -368,7 +382,7 @@
       </div>
     </footer>
 
-    <div class="attribution" role="contentinfo">
+    <div class="attribution">
       <div class="attribution__content container">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
