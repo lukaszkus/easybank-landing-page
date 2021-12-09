@@ -101,6 +101,7 @@ select {
   width: 1.5rem;
   aspect-ratio: 2/1;
   border: 0;
+  z-index: 999;
   cursor: pointer;
 }
 .header__ham-btn span {
@@ -124,6 +125,7 @@ select {
   background-image: url("../../images/icon-close.svg");
   width: 1.125rem;
   aspect-ratio: 1;
+  z-index: 999;
 }
 .header__nav {
   display: flex;
