@@ -192,7 +192,7 @@ select {
 }
 
 .intro {
-  background-image: url("../../images/bg-intro-mobile.svg");
+  background-image: url(../../images/bg-intro-mobile.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top center;
@@ -200,7 +200,7 @@ select {
 }
 @media (min-width: 768px) {
   .intro {
-    background-image: url("../../images/bg-intro-desktop.svg");
+    background-image: url(../../images/bg-intro-desktop.svg);
     background-size: auto;
     background-position: 43vw 55%;
   }
