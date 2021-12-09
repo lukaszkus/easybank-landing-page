@@ -66,11 +66,7 @@ select {
   text-decoration: none;
 }
 .btn:hover {
-  background-image: linear-gradient(
-    135deg,
-    rgba(49, 211, 92, 0.65),
-    rgba(43, 183, 218, 0.65)
-  );
+  background-image: linear-gradient(135deg, rgba(49, 211, 92, 0.65), rgba(43, 183, 218, 0.65));
 }
 
 .article {
@@ -100,7 +96,7 @@ select {
 }
 .header__ham-btn {
   background: transparent;
-  background-image: url("../images/icon-hamburger.svg");
+  background-image: url("../../images/icon-hamburger.svg");
   background-repeat: no-repeat;
   width: 1.5rem;
   aspect-ratio: 2/1;
@@ -125,8 +121,8 @@ select {
     display: none;
   }
 }
-.header__ham-btn[aria-expanded="true"] {
-  background-image: url("../images/icon-close.svg");
+.header__ham-btn[aria-expanded=true] {
+  background-image: url("../../images/icon-close.svg");
   width: 1.125rem;
   aspect-ratio: 1;
   z-index: 999;
@@ -198,7 +194,7 @@ select {
 }
 
 .intro {
-  background-image: url("../images/bg-intro-mobile.svg");
+  background-image: url("../../images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top center;
@@ -206,7 +202,7 @@ select {
 }
 @media (min-width: 768px) {
   .intro {
-    background-image: url("../images/bg-intro-desktop.svg");
+    background-image: url("../../images/bg-intro-desktop.svg");
     background-size: auto;
     background-position: 43vw 55%;
   }
@@ -390,7 +386,7 @@ select {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 5px 5px 0 0;
 }
 .articles__item-content {
